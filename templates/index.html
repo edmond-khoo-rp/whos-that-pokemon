@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Who's That Pokémon?</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+      background: #f4f4f9;
+    }
+    img {
+      max-width: 300px;
+      height: auto;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>{{ name }}</h1>
+  <div>
+    <img src="{{ img_url }}" alt="{{ name }}">
+  </div>
+  <button onclick="window.location.reload();">Get Another Pokémon</button>
+</body>
+</html>
